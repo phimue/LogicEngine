@@ -24,6 +24,14 @@ namespace LogicEngine.Functions
             internal static bool Nor(bool a, bool b) => Not(Or(a, b));
             internal static bool Xor(bool a, bool b) => a ^ b;
             internal static bool Xnor(bool a, bool b) => Not(Xor(a, b));
+
+            internal static class Abstract
+            {
+                internal static bool Implication(bool a, bool b) => Or(Not(a), b);
+                internal static bool Replication(bool a, bool b) => Or(Not(b), a);
+                internal static bool Postsection(bool a, bool b) => And(a, Not(b));
+                internal static bool Presection(bool a, bool b) => And(b, Not(a));
+            }
         }
     }
 }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LogicEngine.Gates
 {
-    internal class LogicGate : ILogicGate
+    internal class InputGate : ILogicGate
     {
         internal string Name { get; set; }
 
-        internal LogicGate(string name)
+        internal InputGate(string name)
         {
             Name = name;
         }
