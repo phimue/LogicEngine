@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LogicEngine.Gates.GateTypes
 {
-    internal class AndGate : ILogicGate
+    public class AndGate : ILogicGate
     {
-        internal List<ILogicGate> Inputs { get; }
+        public List<ILogicGate> Inputs { get; }
 
-        internal AndGate(IEnumerable<ILogicGate> inputs)
+        public AndGate(IEnumerable<ILogicGate> inputs)
         {
             Inputs = inputs.ToList();
         }

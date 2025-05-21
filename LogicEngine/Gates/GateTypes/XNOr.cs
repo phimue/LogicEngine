@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LogicEngine.Gates.GateTypes
 {
-    internal class XNOr : ILogicGate
+    public class XNOr : ILogicGate
     {
-        internal NotGate NotGate { get; }
+        public NotGate NotGate { get; }
 
-        internal XNOr(IEnumerable<ILogicGate> inputs)
+        public XNOr(IEnumerable<ILogicGate> inputs)
         {
             var xorGate = new XorGate(inputs);
             NotGate = new NotGate(xorGate);

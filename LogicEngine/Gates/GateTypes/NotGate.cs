@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LogicEngine.Gates.GateTypes
 {
-    internal class NotGate : ILogicGate
+    public class NotGate : ILogicGate
     {
-        internal ILogicGate Input { get; }
-        internal NotGate(ILogicGate input)
+        public ILogicGate Input { get; }
+
+        public NotGate(ILogicGate input)
         {
             Input = input;
         }

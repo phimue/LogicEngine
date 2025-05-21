@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace LogicEngine.Functions
 {
-    internal static class DeMorganFunction
+    public static class DeMorganFunction
     {
-        internal static ILogicGate Convert(ILogicGate logicGate)
+        public static ILogicGate Convert(ILogicGate logicGate)
         {
             if (logicGate == null)
                 throw new ArgumentNullException("Logic gate is not specified.");
